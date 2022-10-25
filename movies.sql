@@ -18,31 +18,6 @@ USE `year12flix`;
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
--- Table structure for table `movies`
---
-
-DROP TABLE IF EXISTS `movies`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
-CREATE TABLE `movies` (
-  `id` int unsigned NOT NULL AUTO_INCREMENT,
-  `title` varchar(20) NOT NULL,
-  `genre` varchar(20) NOT NULL,
-  `duration` int NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
-/*!40101 SET character_set_client = @saved_cs_client */;
-
---
--- Dumping data for table `movies`
---
-
-LOCK TABLES `movies` WRITE;
-/*!40000 ALTER TABLE `movies` DISABLE KEYS */;
-/*!40000 ALTER TABLE `movies` ENABLE KEYS */;
-UNLOCK TABLES;
-
---
 -- Table structure for table `movies2`
 --
 
@@ -61,10 +36,11 @@ CREATE TABLE `movies2` (
 --
 -- Dumping data for table `movies2`
 --
+-- ORDER BY:  `id`
 
 LOCK TABLES `movies2` WRITE;
 /*!40000 ALTER TABLE `movies2` DISABLE KEYS */;
-INSERT INTO `movies2` VALUES (1,'Metropolis','Sci-Fi',153),(2,'Nosferatu','Horror',94),(3,'The kid','Comedy',68),(4,'The Gold Rush','Adventure',95);
+INSERT INTO `movies2` (`id`, `title`, `genre`, `duration`) VALUES (1,'Metropolis','Sci-Fi',153),(2,'Nosferatu','Horror',94),(3,'The kid','Comedy',68),(4,'The Gold Rush','Adventure',95);
 /*!40000 ALTER TABLE `movies2` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -85,4 +61,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2022-10-24 20:43:02
+-- Dump completed on 2022-10-24 20:49:46

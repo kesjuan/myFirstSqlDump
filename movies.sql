@@ -1,3 +1,5 @@
+CREATE DATABASE  IF NOT EXISTS `year12flix` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci */ /*!80016 DEFAULT ENCRYPTION='N' */;
+USE `year12flix`;
 -- MySQL dump 10.13  Distrib 8.0.31, for macos12 (x86_64)
 --
 -- Host: localhost    Database: year12flix
@@ -65,6 +67,14 @@ LOCK TABLES `movies2` WRITE;
 INSERT INTO `movies2` VALUES (1,'Metropolis','Sci-Fi',153),(2,'Nosferatu','Horror',94),(3,'The kid','Comedy',68),(4,'The Gold Rush','Adventure',95);
 /*!40000 ALTER TABLE `movies2` ENABLE KEYS */;
 UNLOCK TABLES;
+
+--
+-- Dumping events for database 'year12flix'
+--
+
+--
+-- Dumping routines for database 'year12flix'
+--
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
@@ -75,4 +85,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2022-10-24 20:31:05
+-- Dump completed on 2022-10-24 20:43:02
